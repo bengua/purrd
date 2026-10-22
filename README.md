@@ -5,7 +5,9 @@ Pendant qu'une commande tourne, une boucle lo-fi joue. Quand elle se termine, le
 silence revient — et vous dit que vous pouvez reprendre la main.
 
 [![Licence : MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](LICENSE)
-[![CI](https://github.com/OWNERTEST/purrd/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNERTEST/purrd/actions/workflows/ci.yml)
+[![CI](https://github.com/bengua/purrd/actions/workflows/ci.yml/badge.svg)](https://github.com/bengua/purrd/actions/workflows/ci.yml)
+
+**Tutoriel** : [installation pas à pas sur freedzhost.cloud](https://freedzhost.cloud/fr/purrd.html) · [step-by-step tutorial on freedzhost.cloud (EN)](https://freedzhost.cloud/en/purrd.html)
 
 ```text
    /\_/\      $ purrd make -j8
@@ -57,7 +59,7 @@ morceau.
 ### Installer
 
 ```bash
-git clone https://github.com/OWNERTEST/purrd
+git clone https://github.com/bengua/purrd
 cd purrd
 uv sync                      # ou : python3 -m venv .venv && . .venv/bin/activate && pip install -e .
 ```
@@ -152,7 +154,7 @@ and is deterministic per seed.
   purrd ships none — and an optional GTK4 studio.
 
 ```bash
-git clone https://github.com/OWNERTEST/purrd
+git clone https://github.com/bengua/purrd
 cd purrd
 uv sync            # or: pip install -e .
 uv run purrd demo

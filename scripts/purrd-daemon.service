@@ -1,6 +1,6 @@
 [Unit]
 Description=purrd shared audio daemon
-Documentation=https://github.com/OWNERTEST/purrd
+Documentation=https://github.com/bengua/purrd
 After=graphical-session.target pipewire.service
 Wants=graphical-session.target
 
