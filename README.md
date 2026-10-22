@@ -4,7 +4,7 @@
 Pendant qu'une commande tourne, une boucle lo-fi joue. Quand elle se termine, le
 silence revient — et vous dit que vous pouvez reprendre la main.
 
-[![Licence : GPL-3.0-or-later](https://img.shields.io/badge/licence-GPL--3.0--or--later-blue.svg)](LICENSE)
+[![Licence : MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/OWNERTEST/purrd/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNERTEST/purrd/actions/workflows/ci.yml)
 
 ```text
@@ -135,7 +135,7 @@ Et tout tourne en local : pas de cloud, pas de modèle, pas de télémétrie.
 
 ## Licence
 
-[GPL-3.0-or-later](LICENSE).
+[MIT](LICENSE).
 
 ## English
 
@@ -161,7 +161,7 @@ uv run purrd demo
 Needs Linux, Python 3.10+ and PipeWire, ALSA or ffmpeg. Configuration is by
 environment variables (table above); `PURRD_AI_URL` (off by default) points the
 studio at an external music generation server. Full guide:
-[`docs/INSTALLATION.md`](docs/INSTALLATION.md). Licence: GPL-3.0-or-later.
+[`docs/INSTALLATION.md`](docs/INSTALLATION.md). Licence: MIT.
 
 ---
 

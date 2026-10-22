@@ -250,7 +250,7 @@ Strict **pure / side-effect** separation. The sound is *computed* by pure functi
 
 ## 14. License & governance
 
-Proposed license: **GPL-3.0-or-later** (copyleft, consistent with a sovereign, open
+Proposed license: **MIT** (permissive, consistent with a sovereign, open
 approach). Possible alternative: MIT/Apache-2.0 for broader adoption. *(Author's
 choice; this document does not settle the legal aspect.)*
 

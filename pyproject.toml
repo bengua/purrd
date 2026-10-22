@@ -8,7 +8,7 @@ version = "0.4.0"
 description = "Wait sonification: music plays while a task runs, silence signals the end."
 readme = "README.md"
 requires-python = ">=3.10"
-license = "GPL-3.0-or-later"
+license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "FreedzHost" }]
 keywords = ["lofi", "ambient", "cli", "notification", "generative-music"]
