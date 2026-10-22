@@ -1,0 +1,19 @@
+[Unit]
+Description=purrd shared audio daemon
+Documentation=https://github.com/OWNERTEST/purrd
+After=graphical-session.target pipewire.service
+Wants=graphical-session.target
+
+[Service]
+Type=simple
+Environment="PURRD_DAEMON_SOCK=%t/purrd/purrd.sock"
+Environment="PURRD_CONFIG_DIR=%h/.config/purrd"
+EnvironmentFile=-%h/.config/purrd/purrd-daemon.env
+ExecStartPre=-/usr/bin/mkdir -p %t/purrd
+ExecStartPre=-/usr/bin/chmod 2770 %t/purrd
+ExecStart=%h/.local/bin/purrd daemon
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+
+# Archives — never versioned (derived from the sources)
+*.zip
+*.tar.gz
+
+# Generated voice samples (synthesised locally from voices/lines.toml)
+voices/**/*.wav
+# Piper voice models are downloaded by the user, never committed
+voices/**/*.onnx
+voices/**/*.onnx.json

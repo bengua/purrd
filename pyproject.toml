@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "purrd"
+version = "0.4.0"
+description = "Wait sonification: music plays while a task runs, silence signals the end."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "FreedzHost" }]
+keywords = ["lofi", "ambient", "cli", "notification", "generative-music"]
+dependencies = ["numpy>=1.24"]
+
+[project.scripts]
+purrd = "purrd.cli:main"
+purrd-studio = "purrd.studio.app:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5", "pre-commit>=3"]
+studio = ["PyGObject>=3.48"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/purrd"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+# Pinned to the long-standing default set so newer ruff releases, which widen
+# their defaults, do not turn the CI red on unchanged code.
+select = ["E4", "E7", "E9", "F"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

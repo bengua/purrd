@@ -1,0 +1,17 @@
+{
+  "_comment": "Snippet to merge into ~/.claude/settings.json. Adjust the script paths.",
+  "hooks": {
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "~/.purrd/hooks/purrd-on.sh", "async": true } ] }
+    ],
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "~/.purrd/hooks/purrd-off.sh done" } ] }
+    ],
+    "SessionEnd": [
+      { "hooks": [ { "type": "command", "command": "~/.purrd/hooks/purrd-off.sh done" } ] }
+    ],
+    "Notification": [
+      { "hooks": [ { "type": "command", "command": "~/.purrd/hooks/purrd-off.sh permission" } ] }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+# Local safeguards, run before every commit.
+# Install them once:  uv run pre-commit install --hook-type pre-commit --hook-type commit-msg
+# Update the versions:  uv run pre-commit autoupdate
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.9
+    hooks:
+      - id: ruff           # lint
+        args: [--fix]
+      - id: ruff-format    # formatting
+
+  # Python-native equivalent of commitlint: checks that the commit message
+  # follows Conventional Commits (feat:, fix:, docs: ...). No Node dependency.
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v3.4.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-yaml
